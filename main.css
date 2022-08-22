@@ -1,8 +1,11 @@
 body {
   font-family:poppins;
- background-image: url("img_demas/hero-bg.png") ;
+ background-image: url("img_demas/hero-bg.png");
 }
 
+span {
+  color: rgb(26, 135, 48);
+}
 #app {
   width: 100%;
   margin: 0 auto;

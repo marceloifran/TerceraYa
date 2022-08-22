@@ -61,7 +61,7 @@ async function init() {
   todoForm.classList.remove("hidden");
   userInfo.innerHTML = `
     <img src="${currentUser.photoURL}" width="32" />
-    <span>${currentUser.displayName}</span>
+    <h2>${currentUser.displayName}</h2>
   `;
 
   loadTodos();
