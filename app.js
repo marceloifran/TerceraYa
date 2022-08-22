@@ -12,6 +12,7 @@ const todoInput = document.getElementById("todo-input");
 const todoForm = document.getElementById("todo-form");
 const userInfo = document.getElementById("user-info");
 const todosContainer = document.getElementById("todos-container");
+const mostrar = document.getElementById("mostrar");
 
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
@@ -36,6 +37,8 @@ buttonLogin.addEventListener("click", async (e) => {
   try {
     currentUser = await login();
     init();
+    mostrar.classList.add("hidden");
+
   } catch (error) {
     console.error(error);
   }
@@ -44,6 +47,7 @@ buttonLogin.addEventListener("click", async (e) => {
 buttonLogout.addEventListener("click", (e) => {
   logout();
   //localStorage.removeItem("user");
+  mostrar.classList.remove("hidden");
   buttonLogin.classList.remove("hidden");
   buttonLogout.classList.add("hidden");
   todoForm.classList.add("hidden");

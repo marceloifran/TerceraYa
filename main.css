@@ -1,5 +1,6 @@
 body {
   font-family:poppins;
+ background-image: url("img_demas/hero-bg.png") ;
 }
 
 #app {
@@ -49,3 +50,9 @@ input[type="text"] {
 .hidden {
   display: none;
 }
+
+#mostrar {
+  margin: 100px;
+}
+
+
