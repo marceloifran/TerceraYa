@@ -1,10 +1,14 @@
 body {
   font-family:poppins;
- background-image: url("img_demas/hero-bg.png");
+ 
+}
+
+h1 {
+  color: green;
 }
 
 span {
-  color: rgb(26, 135, 48);
+  color: gray;
 }
 #app {
   width: 100%;
@@ -56,6 +60,11 @@ input[type="text"] {
 
 #mostrar {
   margin: 100px;
+}
+
+#button-logut {
+  color: red;
+  font-size: 40px;
 }
 
 
