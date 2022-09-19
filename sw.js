@@ -2,12 +2,6 @@
  urlsToCache = [
     '<link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />',
     'css/estilos.css',
-    'css/adminis.css',
-    'css/empresas.css',
-    'css/gastronomia.css',
-    'css/modas.css',
-    'css/personal.css',
-    'css/super.css',
     'script.js',
     'manifest.json'
  ]

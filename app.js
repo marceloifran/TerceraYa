@@ -39,6 +39,7 @@ buttonLogin.addEventListener("click", async (e) => {
     init();
     mostrar.classList.add("hidden");
 
+
   } catch (error) {
     console.error(error);
   }
@@ -57,6 +58,7 @@ buttonLogout.addEventListener("click", (e) => {
 async function init() {
   //localStorage.setItem("user", JSON.stringify(currentUser));
   buttonLogin.classList.add("hidden");
+  mostrar.classList.add("hidden");
   buttonLogout.classList.remove("hidden");
   todoForm.classList.remove("hidden");
   userInfo.innerHTML = `
