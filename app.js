@@ -7,6 +7,7 @@ let currentUser;
 let todos = [];
 
 const buttonLogin = document.getElementById("button-login");
+const farmacias = document.getElementById("farmacias");
 const buttonLogout = document.getElementById("button-logout");
 const todoInput = document.getElementById("todo-input");
 const todoForm = document.getElementById("todo-form");
@@ -40,6 +41,7 @@ buttonLogin.addEventListener("click", async (e) => {
     mostrar.classList.add("hidden");
 
 
+
   } catch (error) {
     console.error(error);
   }
@@ -49,6 +51,7 @@ buttonLogout.addEventListener("click", (e) => {
   logout();
   //localStorage.removeItem("user");
   mostrar.classList.remove("hidden");
+  farmacias.classList.add("hidden");
   buttonLogin.classList.remove("hidden");
   buttonLogout.classList.add("hidden");
   todoForm.classList.add("hidden");
@@ -57,6 +60,7 @@ buttonLogout.addEventListener("click", (e) => {
 
 async function init() {
   //localStorage.setItem("user", JSON.stringify(currentUser));
+  farmacias.classList.remove("hidden");
   buttonLogin.classList.add("hidden");
   mostrar.classList.add("hidden");
   buttonLogout.classList.remove("hidden");
