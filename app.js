@@ -7,8 +7,9 @@ let currentUser;
 let todos = [];
 
 const buttonLogin = document.getElementById("button-login");
-const farmacias = document.getElementById("farmacias");
+// const farmacias = document.getElementById("farmacias");
 const buttonLogout = document.getElementById("button-logout");
+const buttonLogout2 = document.getElementById("button-logout2");
 const todoInput = document.getElementById("todo-input");
 const todoForm = document.getElementById("todo-form");
 const userInfo = document.getElementById("user-info");
@@ -51,19 +52,21 @@ buttonLogout.addEventListener("click", (e) => {
   logout();
   //localStorage.removeItem("user");
   mostrar.classList.remove("hidden");
-  farmacias.classList.add("hidden");
+  // farmacias.classList.add("hidden");
   buttonLogin.classList.remove("hidden");
   buttonLogout.classList.add("hidden");
+  buttonLogout2.classList.add("hidden");
   todoForm.classList.add("hidden");
   todosContainer.innerHTML = "";
 });
 
 async function init() {
   //localStorage.setItem("user", JSON.stringify(currentUser));
-  farmacias.classList.remove("hidden");
+  // farmacias.classList.remove("hidden");
   buttonLogin.classList.add("hidden");
   mostrar.classList.add("hidden");
   buttonLogout.classList.remove("hidden");
+  buttonLogout2.classList.remove("hidden");
   todoForm.classList.remove("hidden");
   userInfo.innerHTML = `
     <img src="${currentUser.photoURL}" width="32" />
